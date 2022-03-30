@@ -110,6 +110,25 @@ HEADER
   border: 2px solid white;
 }
 
+.floating-menu {
+  top: 1rem;
+  right: 2rem;
+  display: none;
+  position: absolute;
+  align-items: center;
+  color: var(--clr-white);
+}
+.open-menu-btn {
+  color: var(--clr-white);
+}
+.menu-title {
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-family: var(--ff-primary);
+}
+
 @media screen and (max-width: 768px) {
   .header {
     min-height: 100vh;
@@ -165,6 +184,10 @@ NAV
   text-transform: uppercase;
   font-family: var(--ff-primary);
 }
+
+.close-menu-btn {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .selected {
     color: var(--clr-bg-1);
@@ -176,27 +199,9 @@ NAV
   padding-right: 1.75rem;
 }
 
-.floating-menu {
-  top: 1rem;
-  right: 2rem;
-  display: none;
-  position: absolute;
-  align-items: center;
-  color: var(--clr-white);
-}
-.menu-bar {
-  color: var(--clr-white);
-}
-.menu-title {
-  font-weight: 600;
-  font-size: 0.75rem;
-  margin-left: 0.5rem;
-  text-transform: uppercase;
-  font-family: var(--ff-primary);
-}
-
 @media screen and (max-width: 768px) {
   .nav {
+    display: none;
     top: 0;
     right: 0;
     height: 100vh;
@@ -240,12 +245,16 @@ NAV
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 
-  .close-btn {
+  .close-menu-btn {
+    display: block;
     top: 1rem;
     right: 2rem;
     font-size: 1rem;
     font-weight: 800;
     position: absolute;
     color: var(--clr-txt-4);
+  }
+  .open-menu {
+    display: flex;
   }
 }
