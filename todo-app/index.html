@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main center">
+      <!-- Header -->
+      <header class="header center">
+        <h1>Add todo list</h1>
+        <span class="underline"></span>
+      </header>
+      <!-- Input todos -->
+      <section class="input-todo">
+        <form class="todo-form">
+          <input type="text" class="input" placeholder="Add Task..." />
+          <button class="btn add-btn">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+          <button class="btn delete-btn">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+        </form>
+      </section>
+      <!-- all todos -->
+      <section class="todos">
+        <article class="todo">
+          <input
+            type="text"
+            class="input"
+            value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsa vitae fuga deleniti, accusantium laudantium! Praesentium amet nulla alias aperiam pariatur modi, quis enim, dolore debitis optio repudiandae! Iste quaerat odit ut nisi tenetur deserunt voluptate voluptatem totam soluta dolor impedit assumenda pariatur ex, in officia, cupiditate ratione adipisci rerum."
+          />
+
+          <button class="btn done-btn">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </button>
+          <button class="btn edit-btn">
+            <i class="fa fa-edit" aria-hidden="true"></i>
+          </button>
+          <button class="btn delete-btn">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-red: #ec2c2c;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-orange: #e9993d;
+}
+body {
+  color: var(--clr-black);
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(45deg, #ec2c2c, #e9993d);
+}
+
+.main {
+  padding: 1rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.header {
+  row-gap: 0;
+  margin-top: 1rem;
+}
+.header > h1 {
+  font-size: 40px;
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+.underline {
+  width: 2rem;
+  margin-top: 0.5rem;
+  border-top: 2px solid var(--clr-white);
+}
+
+.todo-form {
+  display: grid;
+  grid-template-columns: minmax(200px, 500px) auto auto;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.btn {
+  width: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+.add-btn {
+  background-color: var(--clr-orange);
+}
+
+.delete-btn {
+  background-color: var(--clr-red);
+}
+
+.done-btn {
+  background-color: rgb(66, 238, 66);
+}
+
+.edit-btn {
+  background-color: #850fda;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: minmax(200px, calc(500px - 2rem)) repeat(3, auto);
+}
