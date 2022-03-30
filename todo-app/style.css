@@ -25,7 +25,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 2.5rem;
 }
 
 .header {
@@ -43,7 +43,7 @@ body {
   border-top: 2px solid var(--clr-white);
 }
 
-.todo-form {
+.input-todo {
   display: grid;
   grid-template-columns: minmax(200px, 500px) auto auto;
 }
@@ -76,6 +76,12 @@ body {
 
 .edit-btn {
   background-color: #850fda;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .todo {

@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" type="module" defer></script>
   </head>
   <body>
     <main class="main center">
@@ -23,35 +24,33 @@
       </header>
       <!-- Input todos -->
       <section class="input-todo">
-        <form class="todo-form">
-          <input type="text" class="input" placeholder="Add Task..." />
-          <button class="btn add-btn">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
-          <button class="btn delete-btn">
-            <i class="fa fa-trash" aria-hidden="true"></i>
-          </button>
-        </form>
+        <input
+          type="text"
+          id="inputTag-todo"
+          class="input"
+          placeholder="Add Task..."
+        />
+        <button class="btn add-btn">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        <button class="btn delete-btn" id="clear-input">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
       </section>
       <!-- all todos -->
       <section class="todos">
-        <article class="todo">
-          <input
-            type="text"
-            class="input"
-            value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsa vitae fuga deleniti, accusantium laudantium! Praesentium amet nulla alias aperiam pariatur modi, quis enim, dolore debitis optio repudiandae! Iste quaerat odit ut nisi tenetur deserunt voluptate voluptatem totam soluta dolor impedit assumenda pariatur ex, in officia, cupiditate ratione adipisci rerum."
-          />
-
+        <!-- <article class="todo">
+          <input type="text" class="input" />
           <button class="btn done-btn">
             <i class="fa fa-check" aria-hidden="true"></i>
           </button>
           <button class="btn edit-btn">
             <i class="fa fa-edit" aria-hidden="true"></i>
           </button>
-          <button class="btn delete-btn">
+          <button class="btn delete-btn" id="remove-todo">
             <i class="fa fa-trash" aria-hidden="true"></i>
           </button>
-        </article>
+        </article> -->
       </section>
     </main>
   </body>
