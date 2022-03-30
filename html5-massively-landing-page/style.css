@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: #ffffff;
+  --clr-bg-1: #212931;
+  --clr-bg-2: #1e252d;
+  --clr-bg-3: #eeeeee;
+  --clr-bg-4: #f5f5f5;
+
+  --clr-txt-1: #212931;
+  --clr-txt-2: #ffffff;
+  --clr-txt-3: #909498;
+  --clr-txt-4: #717981;
+  --clr-txt-5: #000000;
+  --clr-txt-6: #1e252d;
+  --clr-txt-7: #eeeeee;
+
+  --ff-primary: "Source Sans Pro", Helvetica, sans-serif;
+  --ff-secondary: Merriweather, Georgia, serif;
+}
+
+body {
+  background-color: var(--clr-bg-2);
+  font-family: var(--ff-secondary);
+  color: var(--clr-txt-1);
+  line-height: 38px;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  line-height: 80px;
+  font-size: 80px;
+  color: var(--clr-txt-2);
+}
+h2 {
+  line-height: 70.4px;
+  font-size: 64px;
+  color: var(--clr-txt-1);
+}
+h3 {
+  line-height: 19.2px;
+  font-size: 12.8px;
+  color: var(--clr-txt-4);
+}
