@@ -62,7 +62,11 @@
     <main class="main center">
       <section class="content">
         <article class="item item1">
-          <p class="item-date">April 25, 2017</p>
+          <div>
+            <div class="border"></div>
+            <p class="item-date">April 25, 2017</p>
+            <div class="right-border border"></div>
+          </div>
           <h2 class="item-heading">and this is a massive headline</h2>
           <p class="item-desc">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
@@ -70,13 +74,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic01.jpg"
-              alt="image 1"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic01.jpg" alt="image 1" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
         <article class="item item2">
@@ -88,13 +86,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic02.jpg"
-              alt="image 2"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic02.jpg" alt="image 2" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
         <article class="item item3">
@@ -106,13 +98,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic03.jpg"
-              alt="image 3"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic03.jpg" alt="image 3" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
 
@@ -125,13 +111,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic04.jpg"
-              alt="image 4"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic04.jpg" alt="image 4" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
         <article class="item item5">
@@ -143,13 +123,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic05.jpg"
-              alt="image 5"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic05.jpg" alt="image 5" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
         <article class="item item6">
@@ -161,13 +135,7 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic06.jpg"
-              alt="image 6"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic06.jpg" alt="image 6" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
         <article class="item item7">
@@ -179,17 +147,69 @@
             nesciunt ex ut aspernatur, sapiente, quam eveniet voluptates
             incidunt eius laborum corporis consequuntur.
           </p>
-          <div class="item-img-container">
-            <img
-              src="./assets/images/pic07.jpg"
-              alt="image 7"
-              class="item-img"
-            />
-          </div>
+          <img src="./assets/images/pic07.jpg" alt="image 7" class="item-img" />
           <button class="btn item-full-story-btn">Full story</button>
         </article>
       </section>
-      <section class="contact"></section>
+      <section class="tabs">
+        <button class="btn tab tab1"><span>1</span></button>
+        <button class="btn tab tab2"><span>2</span></button>
+        <button class="btn tab tab3"><span>3</span></button>
+        <button class="btn tab tab4"><span>...</span></button>
+        <button class="btn tab tab5"><span>8</span></button>
+        <button class="btn tab tab6"><span>9</span></button>
+        <button class="btn tab tab6"><span>10</span></button>
+        <button class="btn tab tab8 next">
+          <span>Next</span>
+          <span>
+            <i class="fa fa-arrow-right"></i>
+          </span>
+        </button>
+      </section>
+      <section class="contact">
+        <article class="contact-msg">
+          <form action="#" class="send-msg-form">
+            <label for="name" class="label">Name</label>
+            <input type="text" name="name" />
+            <label for="email" class="label">email</label>
+            <input type="email" name="email" />
+            <label for="message" class="label">Message</label>
+            <textarea name="message" rows="5"></textarea>
+            <button type="submit" class="btn send-msg-btn">send message</button>
+          </form>
+        </article>
+        <article class="contact-address">
+          <div class="contact-info-container">
+            <label class="label">address</label>
+            <address class="address"></address>
+          </div>
+          <div class="contact-info-container">
+            <label class="label">phone</label>
+            <span>(000) 000-0000</span>
+          </div>
+          <div class="contact-info-container">
+            <label class="label">email</label>
+            <span>info@untitled.tld</span>
+          </div>
+          <div class="contact-info-container">
+            <label class="label">social</label>
+            <ul class="links">
+              <a href="#" class="social-link link">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link link">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link link">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
