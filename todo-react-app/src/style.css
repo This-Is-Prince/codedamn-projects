@@ -18,12 +18,28 @@ body {
   background: linear-gradient(45deg, #ec2c2c, #e9993d);
 }
 
-.header {
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+.center {
   display: flex;
-  margin: 1.5rem 0;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+}
+
+/* 
+=================
+HEADER
+=================
+*/
+
+.header {
+  margin: 1.5rem 0;
+  flex-direction: column;
 }
 .header > h1 {
   font-size: 40px;
@@ -34,4 +50,41 @@ body {
 .underline {
   width: 2rem;
   border-top: 0.1rem solid var(--clr-white);
+}
+
+/* 
+=================
+ADD TODO
+=================
+*/
+
+.add-todo {
+  display: grid;
+  margin: 0 auto;
+  max-width: 568px;
+  grid-template-columns: 1fr auto auto;
+
+  /* variable */
+  --padding: 0.5rem 0.75rem;
+}
+
+.add-todo-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  padding: var(--padding);
+}
+
+.add-btn,
+.clear-btn {
+  padding: var(--padding);
+}
+
+.add-btn {
+  background-color: var(--clr-red);
+}
+
+.clear-btn {
+  background-color: var(--clr-orange);
 }
