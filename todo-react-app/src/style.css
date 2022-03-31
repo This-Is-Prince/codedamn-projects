@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-red: #ec2c2c;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-orange: #e9993d;
+}
+body {
+  color: var(--clr-black);
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(45deg, #ec2c2c, #e9993d);
+}
+
+.header {
+  display: flex;
+  margin: 1.5rem 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.header > h1 {
+  font-size: 40px;
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+
+.underline {
+  width: 2rem;
+  border-top: 0.1rem solid var(--clr-white);
+}
