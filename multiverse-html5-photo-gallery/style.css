@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg-1: #34363b;
+  --clr-bg-2: #000000;
+  --clr-bg-3: #242629;
+  --clr-bg-4: #1f2224;
+  --clr-bg-5: #34a58e;
+
+  --clr-txt-1: #a0a0a1;
+  --clr-txt-2: #34a58e;
+  --clr-txt-3: #ffffff;
+  --clr-txt-4: #505051;
+  --clr-txt-5: #000000;
+
+  --ff: "Source Sans Pro", Helvetica, sans-serif;
+  --size: 14.6667px;
+}
+
+body {
+  line-height: 24.2px;
+  font-size: var(--size);
+  font-family: var(--ff);
+  color: var(--clr-txt-1);
+}
+h1 {
+  font-size: var(--size);
+  color: var(--clr-txt-1);
+  line-height: var(--size);
+}
+h2 {
+  line-height: 17.6px;
+  font-size: 11.7333px;
+  color: var(--clr-txt-3);
+}
