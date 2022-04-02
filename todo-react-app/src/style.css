@@ -13,6 +13,7 @@
   --clr-orange: #e9993d;
 }
 body {
+  padding: 0 2rem;
   color: var(--clr-black);
   font-family: Poppins, sans-serif;
   background: linear-gradient(45deg, #ec2c2c, #e9993d);
@@ -87,4 +88,42 @@ ADD TODO
 
 .clear-btn {
   background-color: var(--clr-orange);
+}
+
+/* 
+=================
+TODOS
+=================
+*/
+.todos {
+  display: flex;
+  row-gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+.todo {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: minmax(200px, 500px) repeat(3, auto);
+}
+
+.todo > input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+.todo > button {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+.done-btn {
+  background-color: green;
+}
+.edit-btn {
+  background-color: blueviolet;
+}
+.delete-btn {
+  background-color: var(--clr-red);
 }
