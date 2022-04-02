@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --ff-family: Roboto, sans-serif;
+
+  --clr-bg-1: #000000;
+  --clr-bg-2: #1cb495;
+
+  --clr-txt-1: #000000;
+  --clr-txt-2: #ffffff;
+}
+
+body {
+  line-height: 26.4px;
+  font-family: var(--ff-family);
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 65px;
+  color: var(--clr-txt-2);
+  font-family: var(--ff-family);
+}
+
+.header {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0, 0.75);
+  background-blend-mode: overlay;
+  background-image: url(./static/bg01.jpg);
+
+  display: grid;
+  padding: 2.5rem;
+  align-items: flex-end;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+.header > section {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+.header-heading {
+  color: var(--clr-txt-2);
+}
+.header-desc {
+  max-width: 425px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-nav {
+  display: flex;
+  column-gap: 1rem;
+}
+.social-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.25);
+}
+.header-footer-desc {
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.header-auth {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.header-email {
+  width: 100%;
+  outline: none;
+  max-width: 275px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: 0.15rem solid rgba(255, 255, 255, 0.25);
+}
+.header-signup {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--clr-txt-2);
+  background-color: var(--clr-bg-2);
+}
+
+@media screen and (max-width: 586px) {
+  .header-heading,
+  .header-desc {
+    display: none;
+  }
+
+  .header-auth {
+    row-gap: 1rem;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .header-email {
+    max-width: 100%;
+  }
+}
