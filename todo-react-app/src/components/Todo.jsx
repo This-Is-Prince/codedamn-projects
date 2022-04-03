@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaTrashAlt, FaEdit } from "react-icons/fa";
 import { MdDone } from "react-icons/md";
 
-const Todo = ({ value }) => {
+const Todo = ({ id, value, deleteTodo, editTodo }) => {
   const [state, setState] = useState(value);
   const [edit, setEdit] = useState(true);
 
@@ -20,6 +20,7 @@ const Todo = ({ value }) => {
         className="btn done-btn center"
         onClick={() => {
           setEdit(true);
+          editTodo(id, state);
         }}
       >
         <MdDone></MdDone>
@@ -32,7 +33,12 @@ const Todo = ({ value }) => {
       >
         <FaEdit></FaEdit>
       </button>
-      <button className="btn delete-btn center">
+      <button
+        className="btn delete-btn center"
+        onClick={() => {
+          deleteTodo(id);
+        }}
+      >
         <FaTrashAlt></FaTrashAlt>
       </button>
     </article>
