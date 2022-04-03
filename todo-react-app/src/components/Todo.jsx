@@ -12,6 +12,16 @@ const Todo = ({ id, value, deleteTodo, editTodo }) => {
         type="text"
         value={state}
         disabled={edit}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            const tmp = state.trim();
+            if (tmp != "") {
+              setEdit(true);
+              editTodo(id, tmp);
+              setState(tmp);
+            }
+          }
+        }}
         onChange={(e) => {
           setState(e.target.value);
         }}
