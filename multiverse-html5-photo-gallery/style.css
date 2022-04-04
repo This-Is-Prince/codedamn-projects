@@ -104,19 +104,87 @@ MODEL
 =============
 */
 
+body.applyModel {
+  overflow: hidden;
+}
+body.applyModel .about {
+  display: none;
+}
 .model {
   inset: 0;
   height: 100vh;
-  display: flex;
+  display: none;
   position: absolute;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.75);
 }
 .model-box {
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  height: 75%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(./static/img01.jpg);
+
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 992px) {
+  .model-box {
+    width: 90vw;
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .model-box {
+    width: 100vh;
+    height: 50vh;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-txt-4);
+  background-color: transparent;
+}
+
+.close-model {
+  grid-area: 1/1/2/3;
+  align-self: flex-start;
+  justify-self: flex-end;
+}
+.left-model {
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: flex-start;
+}
+.right-model {
+  grid-area: 2/2/3/3;
+  align-self: center;
+  justify-self: flex-end;
+}
+.model-info {
+  grid-area: 3/1/4/3;
+  align-self: flex-end;
+}
+.model-info > h2 {
+  text-transform: uppercase;
+}
+.model-info > p {
+  margin-top: 1rem;
+  color: var(--clr-txt-3);
+  text-transform: capitalize;
+}
+body.applyModel .model {
+  display: flex;
 }
