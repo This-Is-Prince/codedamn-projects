@@ -22,10 +22,12 @@
 }
 
 body {
+  display: grid;
   line-height: 24.2px;
   font-size: 14.6667px;
   color: var(--clr-txt-1);
   font-family: var(--ff-secondary);
+  grid-template-columns: minmax(0, 300px) 1fr;
 }
 
 h1,
@@ -47,18 +49,55 @@ h3 {
   line-height: 27.5px;
   font-size: 18.3333px;
 }
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+}
+
+/* 
+==============
+ASIDE
+==============
+*/
+.menu {
+  min-height: 100vh;
+  /* background-color: red; */
+}
 
 /* 
 ==============
 SEARCH-BAR
 ==============
 */
-
-body {
-  display: grid;
-  grid-template-columns: minmax(0, 250px) 1fr;
+.search-bar-container {
+  padding: 1.25rem;
+  background-color: rgba(159, 163, 166, 0.1);
 }
-.menu {
-  min-height: 100vh;
-  background-color: red;
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  --color: rgba(159, 163, 166, 0.3);
+
+  overflow: hidden;
+  border-radius: 0.35rem;
+  border: 0.1rem solid var(--color);
+}
+
+.search-bar > input {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  color: var(--clr-txt-1);
+}
+
+.search-btn {
+  font-size: 1.25rem;
+  color: var(--color);
+  transform: rotateY(180deg);
+  background-color: var(--clr-bg-1);
 }
