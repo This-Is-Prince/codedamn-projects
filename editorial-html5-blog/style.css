@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg-1: #ffffff;
+  --clr-bg-2: #f5f6f7;
+  --clr-bg-3: #eff1f2;
+
+  --clr-txt-1: #7f888f;
+  --clr-txt-2: #3d4449;
+  --clr-txt-3: #f56a6a;
+  --clr-txt-4: #9fa3a6;
+  --clr-txt-5: #000000;
+
+  --ff-primary: "Roboto Slab", serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
+body {
+  line-height: 24.2px;
+  font-size: 14.6667px;
+  color: var(--clr-txt-1);
+  font-family: var(--ff-secondary);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-txt-2);
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 51.3333px;
+  line-height: 66.73333px;
+}
+h2 {
+  line-height: 38.5px;
+  font-size: 25.6667px;
+}
+h3 {
+  line-height: 27.5px;
+  font-size: 18.3333px;
+}
+
+/* 
+==============
+SEARCH-BAR
+==============
+*/
+
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 250px) 1fr;
+}
+.menu {
+  min-height: 100vh;
+  background-color: red;
+}
